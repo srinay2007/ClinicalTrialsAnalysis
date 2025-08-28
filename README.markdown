@@ -57,6 +57,13 @@ A simplified application for managing clinical trials data, with a chatbot power
 
 ## Folder Structure 
 
+# ClinicalTrialsAnalysis
+
+A simplified application for managing clinical trials data, with a chatbot powered by Open AI API, hosted on an Azure VM.
+
+## Folder Structure
+
+```plaintext
 ClinicalTrialsAnalysis/
 ├── .github/
 │   └── workflows/
