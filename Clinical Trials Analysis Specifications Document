@@ -1,0 +1,100 @@
+# AI-Based Clinical Research Analysis System – High-Level Specifications
+
+## 1. High-Level Goals
+
+The goal of this system is to provide a comprehensive platform for analyzing clinical research activities and company-level performance in the pharmaceutical sector. It aims to simplify how researchers, analysts, and decision-makers access, understand, and interact with publicly available clinical and business data.
+
+**Key goals include:**
+
+- Help users track clinical trial progress and drug development.
+- Enable understanding of a company’s R&D and financial strategies.
+- Support competitive analysis using public filings, news, and research outcomes.
+- Allow interactive question answering about pharmaceutical companies through an AI-powered assistant.
+
+## 2. Functional System Components
+
+### 2.1 Front-End Features (React-Based Web Application)
+
+The web interface, built using React, is designed to be user-friendly and intuitive. Users will be able to:
+
+- View summary dashboards of clinical research activity and company data.
+- Initiate data collection processes with simple controls.
+- Explore clinical trials by filtering on company, drug, condition, or phase.
+- Use a chatbot interface to ask questions and receive AI-generated answers.
+- Export reports and insights in PDF or Excel format for offline use.
+
+### 2.2 Back-End Features (Python-Based Services)
+
+The backend, built in Python, is responsible for all data processing and system logic. Key functions include:
+
+- Extraction of clinical trial data from ClinicalTrials.gov using their public API. This includes metadata such as trial ID, sponsor, condition, phase, and current status. Users can apply filters to target specific trials.
+- Web scraping and ingestion of supporting documents such as scientific papers, financial reports, regulatory filings (like Form 10-K), and press articles.
+- Secure storage of structured data in relational databases and unstructured data in vector databases for efficient searching.
+- AI modules that analyze and organize data, and support the chatbot in answering user questions.
+- User authentication and access control for secure and personalized access.
+
+### Architecture Diagram
+
+[Placeholder for architecture diagram, which would be included as an image in the GitHub repository.]
+
+## 3. Sample Key Questions Answered by the System
+
+- What are the most promising drug candidates in Phase III from Company X?
+- What regulatory hurdles has Company Y faced in the past 3 years?
+- How does Company Z's R&D budget compare to its competitors?
+- What’s the success rate of trials initiated by top 5 pharma firms in oncology?
+- What is the financial and credit health of Company X?
+
+## References
+
+To successfully execute the AI-Based Clinical Research Analysis System described in your document, a multidisciplinary team with the following skills and knowledge areas is essential:
+
+### Core Skills Required
+
+1. **Frontend Development (React)**
+   - Proficiency in ReactJS
+   - UI/UX design principles for building intuitive dashboards and chatbot interfaces
+   - Integration with backend APIs for data display and user interaction
+   - Export functionality (PDF/Excel generation)
+
+2. **Backend Development (Python)**
+   - Advanced Python programming, especially in data pipelines
+   - Experience with API integration, especially using ClinicalTrials.gov API
+   - Web scraping (e.g., using BeautifulSoup, Selenium, or Scrapy) for documents like 10-K filings and press articles
+   - Development of AI modules using libraries like LangChain, spaCy, and transformers (Hugging Face)
+
+3. **Data Engineering & Storage**
+   - Designing relational databases (e.g., MySQL) for structured clinical data
+   - Use of vector databases (e.g., FAISS, Pinecone) to store and retrieve unstructured data like documents and embeddings
+   - ETL (Extract, Transform, Load) pipeline design and maintenance
+
+4. **Natural Language Processing (NLP) and AI**
+   - Knowledge of question-answering systems, embeddings, and retrieval-augmented generation (RAG)
+   - Use of LLM APIs (like OpenAI) for chatbot interaction
+   - Domain adaptation using biomedical NLP models (e.g., BioBERT, SciSpacy)
+
+5. **Security and Access Control**
+   - Implementing user authentication (OAuth, JWT)
+   - Secure API endpoints and role-based access to data
+
+### Suggested Learning References
+
+**API & Data Sources**
+
+- [ClinicalTrials.gov](https://clinicaltrials.gov/) – official source for clinical trial metadata
+
+**Web Development**
+
+- **React**: [React Official Documentation](https://reactjs.org/)
+- **Backend**: [Flask](https://flask.palletsprojects.com/) or [FastAPI](https://fastapi.tiangolo.com/)
+- **PDF/Excel export**: [jsPDF](https://github.com/parallax/jsPDF), [SheetJS](https://sheetjs.com/) (frontend) or [pandas](https://pandas.pydata.org/), [xlsxwriter](https://xlsxwriter.readthedocs.io/) (backend)
+
+**Data Processing & NLP**
+
+- [SciSpacy](https://allenai.github.io/scispacy/) for biomedical text
+- [Hugging Face Transformers](https://huggingface.co/transformers/)
+
+**Databases**
+
+- [MySQL](https://www.mysql.com/)
+- [Pinecone](https://www.pinecone.io/) – managed vector database
