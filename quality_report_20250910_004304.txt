@@ -1,0 +1,22 @@
+============================================================
+CLINICAL TRIALS DATABASE QUALITY REPORT
+============================================================
+Generated: 2025-09-10 00:43:04
+
+OVERALL QUALITY ASSESSMENT
+------------------------------
+Overall Score: 0/100
+Quality Level: No Data
+Total Trials: 0
+Total Issues: 0
+
+DETAILED SCORES
+--------------------
+Completeness: 0/100
+Consistency: 0/100
+Format: 0/100
+Relationships: 0/100
+
+No issues found!
+
+============================================================
